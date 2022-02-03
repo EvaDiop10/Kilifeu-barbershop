@@ -1,0 +1,119 @@
+2022-02-01T12:10:42+00:00 CRITICAL Uncaught Error: Undefined constant "WP_ENVIRONMENT_TYPE" in /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php:90
+Stack trace:
+#0 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php(90): constant('WP_ENVIRONMENT_...')
+#1 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php(58): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->make_request('nadiop37@gmail....')
+#2 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(113): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->run()
+#3 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#4 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(526): WP_Hook->do_action(Array)
+#6 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-cron.php(138): do_action_ref_array('wc_admin_daily', Array)
+#7 {main}
+  thrown dans /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php à la ligne 90
+
+2022-02-01T12:35:36+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php:18
+Stack trace:
+#0 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): afficherFormations('\n<p>Bienvenue s...')
+#1 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(193): WP_Hook->apply_filters('\n<p>Bienvenue s...', Array)
+#2 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:paragra...')
+#3 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/themes/twentytwentyone/template-parts/content/content-single.php(23): the_content()
+#4 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template.php(772): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template.php(716): load_template('/opt/lampp/htdo...', false, Array)
+#6 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/themes/twentytwentyone/single.php(18): get_template_part('template-parts/...')
+#8 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template-loader.php(106): include('/opt/lampp/htdo...')
+#9 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-blog-header.php(19): require_once('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/index.php(17): require('/opt/lampp/htdo...')
+#11 {main}
+  thrown dans /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php à la ligne 18
+
+2022-02-01T12:38:11+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php:18
+Stack trace:
+#0 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): afficherFormations('\n<p>Bienvenue s...')
+#1 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(193): WP_Hook->apply_filters('\n<p>Bienvenue s...', Array)
+#2 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:paragra...')
+#3 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/themes/twentytwentyone/template-parts/content/content-single.php(23): the_content()
+#4 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template.php(772): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template.php(716): load_template('/opt/lampp/htdo...', false, Array)
+#6 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/themes/twentytwentyone/single.php(18): get_template_part('template-parts/...')
+#8 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template-loader.php(106): include('/opt/lampp/htdo...')
+#9 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-blog-header.php(19): require_once('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/index.php(17): require('/opt/lampp/htdo...')
+#11 {main}
+  thrown dans /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php à la ligne 18
+
+2022-02-01T13:08:09+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php:18
+Stack trace:
+#0 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): afficherFormations('<div class="wWO...')
+#1 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(193): WP_Hook->apply_filters('<div class="wWO...', Array)
+#2 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/post-template.php(253): apply_filters('the_content', '<div class="wWO...')
+#3 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/templates/single-product/tabs/description.php(30): the_content()
+#4 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1811): wc_get_template('single-product/...')
+#6 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php(47): woocommerce_product_description_tab('description', Array)
+#7 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1591): wc_get_template('single-product/...')
+#9 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): woocommerce_output_product_data_tabs('')
+#10 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#11 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#12 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/templates/content-single-product.php(72): do_action('woocommerce_aft...')
+#13 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template.php(772): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/opt/lampp/htdo...', false)
+#15 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#16 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/template-loader.php(106): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-blog-header.php(19): require_once('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/index.php(17): require('/opt/lampp/htdo...')
+#19 {main}
+  thrown dans /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php à la ligne 18
+
+2022-02-01T13:09:00+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php:18
+Stack trace:
+#0 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): afficherFormations('\n<p>Bienvenue s...')
+#1 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(193): WP_Hook->apply_filters('\n<p>Bienvenue s...', Array)
+#2 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1811): apply_filters('the_content', '<!-- wp:paragra...')
+#3 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(560): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#4 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1141): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#5 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/posts/(?...', Array, NULL)
+#6 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api.php(511): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#7 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api.php(2860): rest_do_request(Object(WP_REST_Request))
+#8 [internal function]: rest_preload_api_request(Array, '/wp/v2/posts/1?...')
+#9 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/block-editor.php(492): array_reduce(Array, 'rest_preload_ap...', Array)
+#10 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-admin/edit-form-blocks.php(72): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#11 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-admin/post.php(187): require('/opt/lampp/htdo...')
+#12 {main}
+  thrown dans /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php à la ligne 18
+
+2022-02-01T13:10:03+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php:18
+Stack trace:
+#0 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): afficherFormations('\n<p>Bienvenue s...')
+#1 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(193): WP_Hook->apply_filters('\n<p>Bienvenue s...', Array)
+#2 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1811): apply_filters('the_content', '<!-- wp:paragra...')
+#3 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(560): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#4 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1141): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#5 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/posts/(?...', Array, NULL)
+#6 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api.php(511): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#7 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api.php(2860): rest_do_request(Object(WP_REST_Request))
+#8 [internal function]: rest_preload_api_request(Array, '/wp/v2/posts/1?...')
+#9 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/block-editor.php(492): array_reduce(Array, 'rest_preload_ap...', Array)
+#10 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-admin/edit-form-blocks.php(72): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#11 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-admin/post.php(187): require('/opt/lampp/htdo...')
+#12 {main}
+  thrown dans /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php à la ligne 18
+
+2022-02-01T13:10:06+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php:18
+Stack trace:
+#0 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/class-wp-hook.php(307): afficherFormations('\n<p>Bienvenue s...')
+#1 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/plugin.php(193): WP_Hook->apply_filters('\n<p>Bienvenue s...', Array)
+#2 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1811): apply_filters('the_content', '<!-- wp:paragra...')
+#3 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(560): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#4 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1141): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#5 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/posts/(?...', Array, NULL)
+#6 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api.php(511): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#7 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/rest-api.php(2860): rest_do_request(Object(WP_REST_Request))
+#8 [internal function]: rest_preload_api_request(Array, '/wp/v2/posts/1?...')
+#9 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-includes/block-editor.php(492): array_reduce(Array, 'rest_preload_ap...', Array)
+#10 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-admin/edit-form-blocks.php(72): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#11 /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-admin/post.php(187): require('/opt/lampp/htdo...')
+#12 {main}
+  thrown dans /opt/lampp/htdocs/KILIFEU_BARBERSHOP/wordpress/wp-content/plugins/Plugin_eva/Plugin_eva.php à la ligne 18
+
